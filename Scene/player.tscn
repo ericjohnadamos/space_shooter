@@ -12,3 +12,13 @@ texture = ExtResource("1_fvmx3")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-9, -38, 7, -38, 12, -13, 34, 2, 48, -7, 46, 22, 12, 28, 6, 38, -9, 38, -15, 26, -43, 23, -45, -5, -35, 3, -13, -11)
+
+[node name="LaserStartPosition" type="Marker2D" parent="."]
+position = Vector2(0, -70)
+gizmo_extents = 20.0
+
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]
