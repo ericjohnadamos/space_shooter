@@ -17,6 +17,8 @@ func _ready() -> void:
 		var rand_scale = rng.randf_range(1, 2)
 		star.scale = Vector2(rand_scale, rand_scale)
 		
+		# randomize animation speed
+		star.speed_scale = rng.randf_range(0.6, 1.4)
 
 func _on_meteor_timer_timeout() -> void:
 	# create an instance
