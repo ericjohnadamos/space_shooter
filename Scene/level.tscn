@@ -21,7 +21,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 10.0
+"speed": 3.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_doivj"]
@@ -43,128 +43,86 @@ texture = ExtResource("1_yk4nb")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D12" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D13" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="AnimatedSprite2D14" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
 autoplay = "default"
-frame = 2
-frame_progress = 0.654904
-
-[node name="AnimatedSprite2D15" type="AnimatedSprite2D" parent="Stars"]
-sprite_frames = SubResource("SpriteFrames_jn5mr")
-autoplay = "default"
-frame = 2
-frame_progress = 0.654904
-
-[node name="AnimatedSprite2D16" type="AnimatedSprite2D" parent="Stars"]
-sprite_frames = SubResource("SpriteFrames_jn5mr")
-autoplay = "default"
-frame = 2
-frame_progress = 0.654904
-
-[node name="AnimatedSprite2D17" type="AnimatedSprite2D" parent="Stars"]
-sprite_frames = SubResource("SpriteFrames_jn5mr")
-autoplay = "default"
-frame = 2
-frame_progress = 0.654904
-
-[node name="AnimatedSprite2D18" type="AnimatedSprite2D" parent="Stars"]
-sprite_frames = SubResource("SpriteFrames_jn5mr")
-autoplay = "default"
-frame = 2
-frame_progress = 0.654904
-
-[node name="AnimatedSprite2D19" type="AnimatedSprite2D" parent="Stars"]
-sprite_frames = SubResource("SpriteFrames_jn5mr")
-autoplay = "default"
-frame = 2
-frame_progress = 0.654904
-
-[node name="AnimatedSprite2D20" type="AnimatedSprite2D" parent="Stars"]
-sprite_frames = SubResource("SpriteFrames_jn5mr")
-autoplay = "default"
-frame = 2
-frame_progress = 0.654904
-
-[node name="AnimatedSprite2D21" type="AnimatedSprite2D" parent="Stars"]
-sprite_frames = SubResource("SpriteFrames_jn5mr")
-autoplay = "default"
-frame = 2
-frame_progress = 0.654904
+frame = 1
+frame_progress = 0.836014
 
 [node name="Player" parent="." instance=ExtResource("1_n8p45")]
 position = Vector2(587, 589)
