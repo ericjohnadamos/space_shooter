@@ -9,8 +9,8 @@ func _ready() -> void:
 	var rng := RandomNumberGenerator.new()
 	for star in $Stars.get_children():
 		# randomize position
-		var rand_x = rng.randi_range(0, size.x)
-		var rand_y = rng.randi_range(0, size.y)
+		var rand_x = rng.randi_range(0, int(size.x))
+		var rand_y = rng.randi_range(0, int(size.y))
 		star.position = Vector2(rand_x, rand_y)
 		
 		# randomize scale
