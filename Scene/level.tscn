@@ -37,8 +37,10 @@ script = ExtResource("1_m8kby")
 position = Vector2(640, 358.5)
 scale = Vector2(5.07813, 2.90234)
 texture = ExtResource("1_yk4nb")
+metadata/_edit_lock_ = true
 
 [node name="Stars" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Stars"]
 sprite_frames = SubResource("SpriteFrames_jn5mr")
@@ -128,6 +130,7 @@ frame_progress = 0.836014
 position = Vector2(587, 589)
 
 [node name="Borders" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2DRight" type="StaticBody2D" parent="Borders"]
 collision_layer = 4
@@ -162,8 +165,17 @@ wait_time = 0.5
 autostart = true
 
 [node name="Meteors" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="Lasers" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 553.0
+offset_top = 37.0
+offset_right = 639.0
+offset_bottom = 60.0
+text = "Level Label"
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
