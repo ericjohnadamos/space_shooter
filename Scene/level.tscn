@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dl5iqq1j5w70f"]
+[gd_scene load_steps=11 format=3 uid="uid://dl5iqq1j5w70f"]
 
 [ext_resource type="Script" path="res://Scene/level.gd" id="1_m8kby"]
 [ext_resource type="PackedScene" uid="uid://cn3u84v4rvmrm" path="res://Scene/player.tscn" id="1_n8p45"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dyvqxpdesp1or" path="res://PNG/Effects/star1.png" id="4_mucai"]
 [ext_resource type="Texture2D" uid="uid://dpt0f5rppey8h" path="res://PNG/Effects/star2.png" id="5_ingxe"]
 [ext_resource type="Texture2D" uid="uid://cov0ogtu3en3" path="res://PNG/Effects/star3.png" id="6_tv2dr"]
+[ext_resource type="Texture2D" uid="uid://c3wvxn5li6ls2" path="res://PNG/UI/playerLife1_red.png" id="7_vol2r"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jn5mr"]
 animations = [{
@@ -196,9 +197,22 @@ anchor_bottom = 1.0
 offset_top = -40.0
 offset_right = 40.0
 grow_vertical = 0
+theme_override_constants/separation = 5
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
 layout_mode = 2
+texture = ExtResource("7_vol2r")
+stretch_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("7_vol2r")
+stretch_mode = 2
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("7_vol2r")
+stretch_mode = 2
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
