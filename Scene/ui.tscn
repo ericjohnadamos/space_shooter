@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://st40gmiairso"]
+[gd_scene load_steps=3 format=3 uid="uid://st40gmiairso"]
 
+[ext_resource type="FontFile" uid="uid://51ddv0d4k614" path="res://Bonus/kenvector_future.ttf" id="1_71unk"]
 [ext_resource type="Texture2D" uid="uid://c3wvxn5li6ls2" path="res://PNG/UI/playerLife1_red.png" id="1_xsefh"]
 
 [node name="UI" type="CanvasLayer"]
@@ -18,8 +19,9 @@ theme_override_constants/margin_top = 20
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 2
+theme_override_fonts/font = ExtResource("1_71unk")
 theme_override_font_sizes/font_size = 24
-text = "Level Label"
+text = "Level 1"
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
 anchors_preset = 2

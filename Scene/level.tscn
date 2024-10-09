@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dyvqxpdesp1or" path="res://PNG/Effects/star1.png" id="4_mucai"]
 [ext_resource type="Texture2D" uid="uid://dpt0f5rppey8h" path="res://PNG/Effects/star2.png" id="5_ingxe"]
 [ext_resource type="Texture2D" uid="uid://cov0ogtu3en3" path="res://PNG/Effects/star3.png" id="6_tv2dr"]
-[ext_resource type="Texture2D" uid="uid://c3wvxn5li6ls2" path="res://PNG/UI/playerLife1_red.png" id="7_vol2r"]
+[ext_resource type="PackedScene" uid="uid://st40gmiairso" path="res://Scene/ui.tscn" id="7_pkq4x"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jn5mr"]
 animations = [{
@@ -171,52 +171,7 @@ metadata/_edit_lock_ = true
 [node name="Lasers" type="Node2D" parent="."]
 metadata/_edit_lock_ = true
 
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="MarginContainer" type="MarginContainer" parent="UI"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -43.0
-offset_right = 43.0
-offset_bottom = 40.0
-grow_horizontal = 2
-theme_override_constants/margin_top = 20
-
-[node name="Label" type="Label" parent="UI/MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 2
-theme_override_font_sizes/font_size = 24
-text = "Level Label"
-
-[node name="MarginContainer2" type="MarginContainer" parent="UI"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -40.0
-offset_right = 109.0
-grow_vertical = 0
-theme_override_constants/margin_left = 20
-
-[node name="HBoxContainer" type="HBoxContainer" parent="UI/MarginContainer2"]
-layout_mode = 2
-theme_override_constants/separation = 5
-
-[node name="TextureRect" type="TextureRect" parent="UI/MarginContainer2/HBoxContainer"]
-layout_mode = 2
-texture = ExtResource("7_vol2r")
-stretch_mode = 2
-
-[node name="TextureRect2" type="TextureRect" parent="UI/MarginContainer2/HBoxContainer"]
-layout_mode = 2
-texture = ExtResource("7_vol2r")
-stretch_mode = 2
-
-[node name="TextureRect3" type="TextureRect" parent="UI/MarginContainer2/HBoxContainer"]
-layout_mode = 2
-texture = ExtResource("7_vol2r")
-stretch_mode = 2
+[node name="UI" parent="." instance=ExtResource("7_pkq4x")]
 
 [connection signal="laser" from="Player" to="." method="_on_player_laser"]
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
